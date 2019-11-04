@@ -1,0 +1,37 @@
+create database trade;
+use trade;
+drop table stock;
+drop table buy;
+
+create table stock(
+	stock_id int primary key,
+	name varchar(30),
+    quantity int,
+    price double,
+    brokerage int
+);
+
+insert into stock values
+	(1,'computer',10,45667,5),
+    (2,'mobile',23,8550,5),
+    (3,'keyboard',56,300,5),
+    (4,'television',23,14000,5),
+    (5,'monitor',34,10000,5),
+    (6,'mouse',98,200,5);
+	
+
+create table buy(
+	buy_id int primary key auto_increment,
+	user_name varchar(30),
+    stock_name varchar(30),
+	quantity int,
+	price double,
+	brokerage int,
+    total_price double
+    );
+  select * from buy  
+  truncate table stock
+    insert into buy values
+	(1,'jerry','computer',10,45667,5);
+    
+    
